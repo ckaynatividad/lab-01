@@ -14,6 +14,8 @@ main {
             "fairy userGuessBox";
 }
 
+
+
 #boxBox {
     background: rgba(255, 255, 255, 0) url(https://opengameart.org/sites/default/files/Compass%20Rose%20GUI%20preview.png) center center/contain no-repeat local; display: grid;
     width: fit-content;
@@ -25,14 +27,14 @@ main {
     width: 800px;
     height: fit-content
     margin-left: 30rem;
-    padding-top:65px;
+    padding-top: 65px;
     padding-left:40px;
     font-family: 'Press Start 2P', cursive;
     font-size: smaller;
 
 }
 #fairy { 
-   grid-area: fairy;
+    grid-area: fairy;
     margin-top: 20rem;
     margin-left: 5rem;
 }

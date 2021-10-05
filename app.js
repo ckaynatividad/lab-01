@@ -10,11 +10,17 @@ const randomNum = Math.floor(Math.random() * 20 +1);
 console.log(randomNum);
 
 button.addEventListener('click', ()=>{
-  
+    
     const userGuess = document.getElementById('userGuess').value;
 
     if(userGuess == randomNum){ 
-        message.textContent = 'You got it!';
+        message.textContent = 'You have crossed to safety.';
+        const playagain = document.getElementById('playagain');  
+        playagain.style.display = 'block';
+        const noMore = document.getElementById('textinBox');
+        noMore.style.display = 'none';
+        const noMore1 = document.getElementById('remaining');
+        noMore1.style.display = 'none';
 
     } else if (userGuess > randomNum) { 
         guess++;
@@ -24,9 +30,11 @@ button.addEventListener('click', ()=>{
         message.textContent = 'Too low.';
     }
     if(guess > 2) {
-        message.textContent = `Sorry, it was ${randomNum}.`;
+        message.textContent = `It was ${randomNum}. You drowned.`;
         const playagain = document.getElementById('playagain');  
         playagain.style.display = 'block';
+        const noMore = document.getElementById('textinBox');
+        noMore.style.display = 'none';
     }
     guessRemaining.textContent = 3 - guess;
   

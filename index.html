@@ -19,17 +19,21 @@
     <h1>Pass The River of Elysium</h1>   
     <main>
     <div id="fairy">
-        <img src="./assets/ghost2.gif" width="360" height="400">
+        <img src="./assets/ghost2.gif" width="380" height="490">
     </div> 
     <div id=boxBox>
     <div id= "userGuessBox">
-    Guess number (1-20) to cross
+        <div id="textinBox">
+    <label for="userGuessBox"> Guess number (1-20) to cross</label>
     <input id="userGuess" type="test">
     <button id="submit">Submit</button>
+            </div>
     <p> <span id="message"></span>
     </p>
-    <p> Tries remaining:
+    <p> <div id=remaining>
+        <label for="guessRemaining"> Tries remaining:</label>
         <span id="guessRemaining">3</span>
+        </div>
 
     </p>
     <div id=playagain>
