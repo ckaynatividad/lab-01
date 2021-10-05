@@ -1,3 +1,23 @@
 #playagain {
     display: none;
 }
+
+body { 
+    background: rgb(0, 0, 0) url(https://assets-global.viveport.com/media/catalog/product/cache/612e719ded2c4c22af0977aa2412925e/2/a/2a80edcb-168b-4a65-9051-998bce07637b.b0e0fba7.png) center center/contain no-repeat local;
+
+}
+
+#fairy { 
+    padding-left: 10rem;
+    padding-top: 20rem;
+    width: 360px;
+    length: 420px;
+}
+
+#userGuessBox {
+    background-color: white;
+    
+}
+h1 {
+    background-color: white;
+}

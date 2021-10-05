@@ -11,31 +11,31 @@ console.log(randomNum);
 
 button.addEventListener('click', ()=>{
   
-  const userGuess = document.getElementById('userGuess').value;
+    const userGuess = document.getElementById('userGuess').value;
 
-  if(userGuess == randomNum){ 
-      message.textContent = 'You got it!';
+    if(userGuess == randomNum){ 
+        message.textContent = 'You got it!';
 
     } else if (userGuess > randomNum) { 
-      guess++;
-      message.textContent = 'Too high.';
+        guess++;
+        message.textContent = 'Too high.';
     } else if (userGuess < randomNum) {
-      guess++;
-     message.textContent = 'Too low.';
+        guess++;
+        message.textContent = 'Too low.';
     }
     if(guess > 2) {
-    message.textContent = `Sorry, it was ${randomNum}.`;
-    const playagain = document.getElementById('playagain');  
-    playagain.style.display = 'block';
-  }
-guessRemaining.textContent = 3 - guess;
+        message.textContent = `Sorry, it was ${randomNum}.`;
+        const playagain = document.getElementById('playagain');  
+        playagain.style.display = 'block';
+    }
+    guessRemaining.textContent = 3 - guess;
   
 
 });
 
 refresh.addEventListener('click', ()=>{
-  window.location.reload();
-  refresh.classList.add('hide');
+    window.location.reload();
+    refresh.classList.add('hide');
   
 })
 
