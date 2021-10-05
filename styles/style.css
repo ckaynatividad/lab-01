@@ -6,18 +6,38 @@ body {
     background: rgb(0, 0, 0) url(https://assets-global.viveport.com/media/catalog/product/cache/612e719ded2c4c22af0977aa2412925e/2/a/2a80edcb-168b-4a65-9051-998bce07637b.b0e0fba7.png) center center/contain no-repeat local;
 
 }
-
-#fairy { 
-    padding-left: 10rem;
-    padding-top: 20rem;
-    width: 360px;
-    length: 420px;
+main {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas: 
+            "fairy userGuessBox";
 }
 
+#boxBox {
+    background: rgba(255, 255, 255, 0) url(https://opengameart.org/sites/default/files/Compass%20Rose%20GUI%20preview.png) center center/contain no-repeat local; display: grid;
+    width: fit-content;
+
+}
 #userGuessBox {
-    background-color: white;
-    
+    grid-area: userGuessBox;
+    color: white;
+    width: 800px;
+    height: fit-content
+    margin-left: 30rem;
+    padding-top:65px;
+    padding-left:40px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: smaller;
+
 }
+#fairy { 
+   grid-area: fairy;
+    margin-top: 20rem;
+    margin-left: 5rem;
+}
+
+
 h1 {
     background-color: white;
 }

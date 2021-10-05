@@ -9,21 +9,26 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>Guess The Random Number Between 1 - 20!</h1>   
-    <div id=fairy>
-        <img src="./assets/ghost2.gif" width="460" height="500">
+    <h1>Pass The River of Elysium</h1>   
+    <main>
+    <div id="fairy">
+        <img src="./assets/ghost2.gif" width="360" height="400">
     </div> 
+    <div id=boxBox>
     <div id= "userGuessBox">
-    Input your guess into her dummy
+    Guess number (1-20) to cross
     <input id="userGuess" type="test">
     <button id="submit">Submit</button>
     <p> <span id="message"></span>
     </p>
-    <p> Guesses remaining:
+    <p> Tries remaining:
         <span id="guessRemaining">3</span>
 
     </p>
@@ -31,6 +36,8 @@
     <button id="refresh">Play again?</button>
     </div>
     </div>
+    </div>
+    </main>
 
     <script type="module" src="./app.js"></script>
 </body>
